@@ -1,0 +1,702 @@
+[2026-09-13 00:01:29] ============================================================
+[2026-09-13 00:01:29] PIPELINE RUN STARTED
+[2026-09-13 00:01:29] ============================================================
+[2026-09-13 00:01:29] START: Prepare DEM (merge/clip/slope/aspect)
+[2026-09-13 00:01:33] DONE: Prepare DEM (merge/clip/slope/aspect)
+[2026-09-13 00:01:33] START: Prepare distance-to-stream
+[2026-09-13 00:04:52] DONE: Prepare distance-to-stream
+[2026-09-13 00:04:52] START: Prepare soil/geology
+[2026-09-13 00:04:53] DONE: Prepare soil/geology
+[2026-09-13 00:04:53] START: Prepare rainfall (clip/reproject/sum)
+[2026-09-13 00:05:00] DONE: Prepare rainfall (clip/reproject/sum)
+[2026-09-13 00:05:00] START: Prepare landslide inventory points
+[2026-09-13 00:05:01] DONE: Prepare landslide inventory points
+[2026-09-13 00:05:01] START: Build training dataset
+[2026-09-13 00:05:04] DONE: Build training dataset
+[2026-09-13 00:05:04] START: Train Random Forest model
+[2026-09-13 00:05:14] DONE: Train Random Forest model
+[2026-09-13 00:05:14] START: Generate district-wide red zone map
+[2026-09-13 00:05:52] DONE: Generate district-wide red zone map
+[2026-09-13 00:05:52] START: Prepare population + villages
+[2026-09-13 00:05:55] DONE: Prepare population + villages
+[2026-09-13 00:05:55] START: Village <-> red zone risk join
+[2026-09-13 00:06:04] DONE: Village <-> red zone risk join
+[2026-09-13 00:06:04] START: Prepare land use
+[2026-09-13 00:06:53] DONE: Prepare land use
+[2026-09-13 00:06:53] START: Carrying capacity for relocation sites
+[2026-09-13 00:06:59] DONE: Carrying capacity for relocation sites
+[2026-09-13 00:06:59] START: Flood hazard (HAND)
+[2026-09-13 00:07:43] DONE: Flood hazard (HAND)
+[2026-09-13 00:07:43] START: Load outputs into PostGIS
+[2026-09-13 00:07:54] DONE: Load outputs into PostGIS
+[2026-09-13 00:07:54] ============================================================
+[2026-09-13 00:07:54] PIPELINE COMPLETE — all steps succeeded
+[2026-09-13 00:07:54] Final outputs:
+[2026-09-13 00:07:54]   - data/outputs/red_zones_final.geojson
+[2026-09-13 00:07:54]   - data/outputs/villages_with_risk.geojson
+[2026-09-13 00:07:54]   - data/outputs/relocation_sites.geojson
+[2026-09-13 00:07:54]   - data/outputs/landslide_rf_model.pkl
+[2026-09-13 00:07:54]   - PostGIS tables: red_zones, villages, relocation_sites
+[2026-09-13 00:07:54] ============================================================
+[2026-09-15 14:18:12] ============================================================
+[2026-09-15 14:18:12] PIPELINE RUN STARTED
+[2026-09-15 14:18:12] ============================================================
+[2026-09-15 14:18:12] START: Prepare DEM (merge/clip/slope/aspect)
+[2026-09-15 14:18:15] DONE: Prepare DEM (merge/clip/slope/aspect)
+[2026-09-15 14:18:15] START: Prepare distance-to-stream
+[2026-09-15 14:19:08] DONE: Prepare distance-to-stream
+[2026-09-15 14:19:08] START: Prepare soil/geology
+[2026-09-15 14:19:08] DONE: Prepare soil/geology
+[2026-09-15 14:19:08] START: Prepare rainfall (clip/reproject/sum)
+[2026-09-15 14:19:12] DONE: Prepare rainfall (clip/reproject/sum)
+[2026-09-15 14:19:12] START: Prepare landslide inventory points
+[2026-09-15 14:19:13] DONE: Prepare landslide inventory points
+[2026-09-15 14:19:13] START: Build training dataset
+[2026-09-15 14:19:14] DONE: Build training dataset
+[2026-09-15 14:19:14] START: Train Random Forest model
+[2026-09-15 14:19:19] DONE: Train Random Forest model
+[2026-09-15 14:19:19] START: Generate district-wide red zone map
+[2026-09-15 14:19:41] DONE: Generate district-wide red zone map
+[2026-09-15 14:19:41] START: Prepare population + villages
+[2026-09-15 14:19:42] DONE: Prepare population + villages
+[2026-09-15 14:19:42] START: Village <-> red zone risk join
+[2026-09-15 14:19:47] DONE: Village <-> red zone risk join
+[2026-09-15 14:19:47] START: Prepare land use
+[2026-09-15 14:20:19] DONE: Prepare land use
+[2026-09-15 14:20:19] START: Carrying capacity for relocation sites
+[2026-09-15 14:20:22] DONE: Carrying capacity for relocation sites
+[2026-09-15 14:20:22] START: Flood hazard (HAND)
+[2026-09-15 14:20:51] DONE: Flood hazard (HAND)
+[2026-09-15 14:20:51] START: Load outputs into PostGIS
+[2026-09-15 14:20:55] DONE: Load outputs into PostGIS
+[2026-09-15 14:20:55] ============================================================
+[2026-09-15 14:20:55] PIPELINE COMPLETE — all steps succeeded
+[2026-09-15 14:20:55] Final outputs:
+[2026-09-15 14:20:55]   - data/outputs/red_zones_final.geojson
+[2026-09-15 14:20:55]   - data/outputs/villages_with_risk.geojson
+[2026-09-15 14:20:55]   - data/outputs/relocation_sites.geojson
+[2026-09-15 14:20:55]   - data/outputs/landslide_rf_model.pkl
+[2026-09-15 14:20:55]   - PostGIS tables: red_zones, villages, relocation_sites
+[2026-09-15 14:20:55] ============================================================
+[2026-11-15 18:04:17] ============================================================
+[2026-11-15 18:04:17] PIPELINE RUN STARTED
+[2026-11-15 18:04:17] ============================================================
+[2026-11-15 18:04:17] START: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-15 18:04:17] FAILED: Prepare DEM (merge/clip/slope/aspect) (exit code 1)
+[2026-11-15 18:04:17] Pipeline halted due to failure. Fix the error above and re-run.
+[2026-11-15 18:08:43] ============================================================
+[2026-11-15 18:08:43] PIPELINE RUN STARTED
+[2026-11-15 18:08:43] ============================================================
+[2026-11-15 18:08:43] START: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-15 18:08:46] DONE: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-15 18:08:46] START: Prepare distance-to-stream
+[2026-11-15 18:15:42] ============================================================
+[2026-11-15 18:15:42] PIPELINE RUN STARTED
+[2026-11-15 18:15:42] ============================================================
+[2026-11-15 18:15:42] START: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-15 18:15:47] DONE: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-15 18:15:47] START: Prepare distance-to-stream
+[2026-11-15 18:15:53] FAILED: Prepare distance-to-stream (exit code 1)
+[2026-11-15 18:15:53] Pipeline halted due to failure. Fix the error above and re-run.
+[2026-11-15 18:52:55] ============================================================
+[2026-11-15 18:52:55] PIPELINE RUN STARTED
+[2026-11-15 18:52:55] ============================================================
+[2026-11-15 18:52:55] START: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-15 18:52:59] DONE: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-15 18:52:59] START: Prepare distance-to-stream
+[2026-11-15 18:53:54] DONE: Prepare distance-to-stream
+[2026-11-15 18:53:54] START: Prepare soil/geology
+[2026-11-15 18:53:55] DONE: Prepare soil/geology
+[2026-11-15 18:53:55] START: Prepare rainfall (clip/reproject/sum)
+[2026-11-15 18:54:00] DONE: Prepare rainfall (clip/reproject/sum)
+[2026-11-15 18:54:00] START: Prepare landslide inventory points
+[2026-11-15 18:54:01] DONE: Prepare landslide inventory points
+[2026-11-15 18:54:01] START: Build training dataset
+[2026-11-15 18:54:04] DONE: Build training dataset
+[2026-11-15 18:54:04] START: Train Random Forest model
+[2026-11-15 18:54:13] DONE: Train Random Forest model
+[2026-11-15 18:54:13] START: Generate district-wide red zone map
+[2026-11-15 18:54:50] DONE: Generate district-wide red zone map
+[2026-11-15 18:54:50] START: Prepare population + villages
+[2026-11-15 18:54:53] DONE: Prepare population + villages
+[2026-11-15 18:54:53] START: Village <-> red zone risk join
+[2026-11-15 18:55:02] DONE: Village <-> red zone risk join
+[2026-11-15 18:55:02] START: Prepare land use
+[2026-11-15 18:55:33] DONE: Prepare land use
+[2026-11-15 18:55:33] START: Carrying capacity for relocation sites
+[2026-11-15 18:55:38] DONE: Carrying capacity for relocation sites
+[2026-11-15 18:55:38] START: Flood hazard (HAND)
+[2026-11-15 18:55:40] FAILED: Flood hazard (HAND) (exit code 1)
+[2026-11-15 18:55:40] Pipeline halted due to failure. Fix the error above and re-run.
+[2026-11-15 19:02:50] ============================================================
+[2026-11-15 19:02:50] PIPELINE RUN STARTED
+[2026-11-15 19:02:50] ============================================================
+[2026-11-15 19:02:50] START: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-15 19:02:54] DONE: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-15 19:02:54] START: Prepare distance-to-stream
+[2026-11-15 19:03:48] DONE: Prepare distance-to-stream
+[2026-11-15 19:03:48] START: Prepare soil/geology
+[2026-11-15 19:03:48] DONE: Prepare soil/geology
+[2026-11-15 19:03:48] START: Prepare rainfall (clip/reproject/sum)
+[2026-11-15 19:03:54] DONE: Prepare rainfall (clip/reproject/sum)
+[2026-11-15 19:03:54] START: Prepare landslide inventory points
+[2026-11-15 19:03:55] DONE: Prepare landslide inventory points
+[2026-11-15 19:03:55] START: Build training dataset
+[2026-11-15 19:03:57] DONE: Build training dataset
+[2026-11-15 19:03:57] START: Train Random Forest model
+[2026-11-15 19:04:07] DONE: Train Random Forest model
+[2026-11-15 19:04:07] START: Generate district-wide red zone map
+[2026-11-15 19:04:44] DONE: Generate district-wide red zone map
+[2026-11-15 19:04:44] START: Prepare population + villages
+[2026-11-15 19:04:47] DONE: Prepare population + villages
+[2026-11-15 19:04:47] START: Village <-> red zone risk join
+[2026-11-15 19:04:56] DONE: Village <-> red zone risk join
+[2026-11-15 19:04:56] START: Prepare land use
+[2026-11-15 19:05:29] DONE: Prepare land use
+[2026-11-15 19:05:29] START: Carrying capacity for relocation sites
+[2026-11-15 19:05:35] DONE: Carrying capacity for relocation sites
+[2026-11-15 19:05:35] START: Flood hazard (HAND)
+[2026-11-15 19:05:36] FAILED: Flood hazard (HAND) (exit code 1)
+[2026-11-15 19:05:36] Pipeline halted due to failure. Fix the error above and re-run.
+[2026-11-15 19:21:24] ============================================================
+[2026-11-15 19:21:24] PIPELINE RUN STARTED
+[2026-11-15 19:21:24] ============================================================
+[2026-11-15 19:21:24] START: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-15 19:21:28] DONE: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-15 19:21:28] START: Prepare distance-to-stream
+[2026-11-15 19:22:23] DONE: Prepare distance-to-stream
+[2026-11-15 19:22:23] START: Prepare soil/geology
+[2026-11-15 19:22:24] DONE: Prepare soil/geology
+[2026-11-15 19:22:24] START: Prepare rainfall (clip/reproject/sum)
+[2026-11-15 19:22:31] DONE: Prepare rainfall (clip/reproject/sum)
+[2026-11-15 19:22:31] START: Prepare landslide inventory points
+[2026-11-15 19:22:32] DONE: Prepare landslide inventory points
+[2026-11-15 19:22:32] START: Build training dataset
+[2026-11-15 19:22:34] DONE: Build training dataset
+[2026-11-15 19:22:34] START: Train Random Forest model
+[2026-11-15 19:22:46] DONE: Train Random Forest model
+[2026-11-15 19:22:46] START: Generate district-wide red zone map
+[2026-11-15 19:23:25] DONE: Generate district-wide red zone map
+[2026-11-15 19:23:25] START: Prepare population + villages
+[2026-11-15 19:23:28] DONE: Prepare population + villages
+[2026-11-15 19:23:28] START: Village <-> red zone risk join
+[2026-11-15 19:23:37] DONE: Village <-> red zone risk join
+[2026-11-15 19:23:37] START: Prepare land use
+[2026-11-15 19:24:00] DONE: Prepare land use
+[2026-11-15 19:24:00] START: Carrying capacity for relocation sites
+[2026-11-15 19:24:06] DONE: Carrying capacity for relocation sites
+[2026-11-15 19:24:06] START: Flood hazard (HAND)
+[2026-11-15 19:24:54] DONE: Flood hazard (HAND)
+[2026-11-15 19:24:54] START: Load outputs into PostGIS
+[2026-11-15 19:24:59] DONE: Load outputs into PostGIS
+[2026-11-15 19:24:59] ============================================================
+[2026-11-15 19:24:59] PIPELINE COMPLETE — all steps succeeded
+[2026-11-15 19:24:59] Final outputs:
+[2026-11-15 19:24:59]   - data/outputs/red_zones_final.geojson
+[2026-11-15 19:24:59]   - data/outputs/villages_with_risk.geojson
+[2026-11-15 19:24:59]   - data/outputs/relocation_sites.geojson
+[2026-11-15 19:24:59]   - data/outputs/landslide_rf_model.pkl
+[2026-11-15 19:24:59]   - PostGIS tables: red_zones, villages, relocation_sites
+[2026-11-15 19:24:59] ============================================================
+[2026-11-15 19:44:20] ============================================================
+[2026-11-15 19:44:20] PIPELINE RUN STARTED
+[2026-11-15 19:44:20] ============================================================
+[2026-11-15 19:44:20] START: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-15 19:44:24] DONE: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-15 19:44:24] START: Prepare distance-to-stream
+[2026-11-15 19:45:19] DONE: Prepare distance-to-stream
+[2026-11-15 19:45:19] START: Prepare soil/geology
+[2026-11-15 19:45:20] DONE: Prepare soil/geology
+[2026-11-15 19:45:20] START: Prepare rainfall (clip/reproject/sum)
+[2026-11-15 19:45:26] DONE: Prepare rainfall (clip/reproject/sum)
+[2026-11-15 19:45:26] START: Prepare landslide inventory points
+[2026-11-15 19:45:27] DONE: Prepare landslide inventory points
+[2026-11-15 19:45:27] START: Build training dataset
+[2026-11-15 19:45:29] DONE: Build training dataset
+[2026-11-15 19:45:29] START: Train Random Forest model
+[2026-11-15 19:45:39] DONE: Train Random Forest model
+[2026-11-15 19:45:39] START: Generate district-wide red zone map
+[2026-11-15 19:46:17] DONE: Generate district-wide red zone map
+[2026-11-15 19:46:17] START: Prepare population + villages
+[2026-11-15 19:46:20] DONE: Prepare population + villages
+[2026-11-15 19:46:20] START: Village <-> red zone risk join
+[2026-11-15 19:46:29] DONE: Village <-> red zone risk join
+[2026-11-15 19:46:29] START: Prepare land use
+[2026-11-15 19:46:56] DONE: Prepare land use
+[2026-11-15 19:46:56] START: Carrying capacity for relocation sites
+[2026-11-15 19:47:02] DONE: Carrying capacity for relocation sites
+[2026-11-15 19:47:02] START: Flood hazard (HAND)
+[2026-11-15 19:47:46] DONE: Flood hazard (HAND)
+[2026-11-15 19:47:46] START: Load outputs into PostGIS
+[2026-11-15 19:47:53] DONE: Load outputs into PostGIS
+[2026-11-15 19:47:53] ============================================================
+[2026-11-15 19:47:53] PIPELINE COMPLETE — all steps succeeded
+[2026-11-15 19:47:53] Final outputs:
+[2026-11-15 19:47:53]   - data/outputs/red_zones_final.geojson
+[2026-11-15 19:47:53]   - data/outputs/villages_with_risk.geojson
+[2026-11-15 19:47:53]   - data/outputs/relocation_sites.geojson
+[2026-11-15 19:47:53]   - data/outputs/landslide_rf_model.pkl
+[2026-11-15 19:47:53]   - PostGIS tables: red_zones, villages, relocation_sites
+[2026-11-15 19:47:53] ============================================================
+[2026-11-17 12:38:12] ============================================================
+[2026-11-17 12:38:12] PIPELINE RUN STARTED
+[2026-11-17 12:38:12] ============================================================
+[2026-11-17 12:38:12] START: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-17 12:38:14] DONE: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-17 12:38:14] START: Prepare distance-to-stream
+[2026-11-17 12:38:44] DONE: Prepare distance-to-stream
+[2026-11-17 12:38:44] START: Prepare soil/geology
+[2026-11-17 12:38:44] DONE: Prepare soil/geology
+[2026-11-17 12:38:44] START: Prepare rainfall (clip/reproject/sum)
+[2026-11-17 12:38:47] DONE: Prepare rainfall (clip/reproject/sum)
+[2026-11-17 12:38:47] START: Prepare landslide inventory points
+[2026-11-17 12:38:48] DONE: Prepare landslide inventory points
+[2026-11-17 12:38:48] START: Build training dataset
+[2026-11-17 12:38:49] DONE: Build training dataset
+[2026-11-17 12:38:49] START: Train Random Forest model
+[2026-11-17 12:38:53] DONE: Train Random Forest model
+[2026-11-17 12:38:53] START: Generate district-wide red zone map
+[2026-11-17 12:39:16] DONE: Generate district-wide red zone map
+[2026-11-17 12:39:16] START: Prepare population + villages
+[2026-11-17 12:39:18] DONE: Prepare population + villages
+[2026-11-17 12:39:18] START: Village <-> red zone risk join
+[2026-11-17 12:39:23] DONE: Village <-> red zone risk join
+[2026-11-17 12:39:23] START: Prepare land use
+[2026-11-17 12:39:37] DONE: Prepare land use
+[2026-11-17 12:39:37] START: Carrying capacity for relocation sites
+[2026-11-17 12:39:40] DONE: Carrying capacity for relocation sites
+[2026-11-17 12:39:40] START: Flood hazard (HAND)
+[2026-11-17 12:40:06] DONE: Flood hazard (HAND)
+[2026-11-17 12:40:06] START: Load outputs into PostGIS
+[2026-11-17 12:40:09] DONE: Load outputs into PostGIS
+[2026-11-17 12:40:09] ============================================================
+[2026-11-17 12:40:09] PIPELINE COMPLETE — all steps succeeded
+[2026-11-17 12:40:09] Final outputs:
+[2026-11-17 12:40:09]   - data/outputs/red_zones_final.geojson
+[2026-11-17 12:40:09]   - data/outputs/villages_with_risk.geojson
+[2026-11-17 12:40:09]   - data/outputs/relocation_sites.geojson
+[2026-11-17 12:40:09]   - data/outputs/landslide_rf_model.pkl
+[2026-11-17 12:40:09]   - PostGIS tables: red_zones, villages, relocation_sites
+[2026-11-17 12:40:09] ============================================================
+[2026-11-17 12:53:34] ============================================================
+[2026-11-17 12:53:34] PIPELINE RUN STARTED
+[2026-11-17 12:53:34] ============================================================
+[2026-11-17 12:53:34] START: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-17 12:53:36] DONE: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-17 12:53:36] START: Prepare distance-to-stream
+[2026-11-17 12:54:06] DONE: Prepare distance-to-stream
+[2026-11-17 12:54:06] START: Prepare soil/geology
+[2026-11-17 12:54:06] DONE: Prepare soil/geology
+[2026-11-17 12:54:06] START: Prepare rainfall (clip/reproject/sum)
+[2026-11-17 12:54:09] DONE: Prepare rainfall (clip/reproject/sum)
+[2026-11-17 12:54:09] START: Prepare landslide inventory points
+[2026-11-17 12:54:10] DONE: Prepare landslide inventory points
+[2026-11-17 12:54:10] START: Build training dataset
+[2026-11-17 12:54:11] DONE: Build training dataset
+[2026-11-17 12:54:11] START: Train Random Forest model
+[2026-11-17 12:54:15] DONE: Train Random Forest model
+[2026-11-17 12:54:15] START: Generate district-wide red zone map
+[2026-11-17 12:54:38] DONE: Generate district-wide red zone map
+[2026-11-17 12:54:38] START: Prepare population + villages
+[2026-11-17 12:54:39] DONE: Prepare population + villages
+[2026-11-17 12:54:39] START: Village <-> red zone risk join
+[2026-11-17 12:54:44] DONE: Village <-> red zone risk join
+[2026-11-17 12:54:44] START: Prepare land use
+[2026-11-17 12:54:59] DONE: Prepare land use
+[2026-11-17 12:54:59] START: Carrying capacity for relocation sites
+[2026-11-17 12:55:02] DONE: Carrying capacity for relocation sites
+[2026-11-17 12:55:02] START: Flood hazard (HAND)
+[2026-11-17 12:55:30] DONE: Flood hazard (HAND)
+[2026-11-17 12:55:30] START: Load outputs into PostGIS
+[2026-11-17 12:55:33] DONE: Load outputs into PostGIS
+[2026-11-17 12:55:33] ============================================================
+[2026-11-17 12:55:33] PIPELINE COMPLETE — all steps succeeded
+[2026-11-17 12:55:33] Final outputs:
+[2026-11-17 12:55:33]   - data/outputs/red_zones_final.geojson
+[2026-11-17 12:55:33]   - data/outputs/villages_with_risk.geojson
+[2026-11-17 12:55:33]   - data/outputs/relocation_sites.geojson
+[2026-11-17 12:55:33]   - data/outputs/landslide_rf_model.pkl
+[2026-11-17 12:55:33]   - PostGIS tables: red_zones, villages, relocation_sites
+[2026-11-17 12:55:33] ============================================================
+[2026-11-17 13:15:59] ============================================================
+[2026-11-17 13:15:59] PIPELINE RUN STARTED
+[2026-11-17 13:15:59] ============================================================
+[2026-11-17 13:15:59] START: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-17 13:16:03] DONE: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-17 13:16:03] START: Prepare distance-to-stream
+[2026-11-17 13:17:06] DONE: Prepare distance-to-stream
+[2026-11-17 13:17:06] START: Prepare soil/geology
+[2026-11-17 13:17:07] DONE: Prepare soil/geology
+[2026-11-17 13:17:07] START: Prepare rainfall (clip/reproject/sum)
+[2026-11-17 13:17:14] DONE: Prepare rainfall (clip/reproject/sum)
+[2026-11-17 13:17:14] START: Prepare landslide inventory points
+[2026-11-17 13:17:15] DONE: Prepare landslide inventory points
+[2026-11-17 13:17:15] START: Build training dataset
+[2026-11-17 13:17:18] DONE: Build training dataset
+[2026-11-17 13:17:18] START: Train Random Forest model
+[2026-11-17 13:17:29] DONE: Train Random Forest model
+[2026-11-17 13:17:29] START: Generate district-wide red zone map
+[2026-11-17 13:18:16] DONE: Generate district-wide red zone map
+[2026-11-17 13:18:16] START: Prepare population + villages
+[2026-11-17 13:18:20] DONE: Prepare population + villages
+[2026-11-17 13:18:20] START: Village <-> red zone risk join
+[2026-11-17 13:18:30] DONE: Village <-> red zone risk join
+[2026-11-17 13:18:30] START: Prepare land use
+[2026-11-17 13:19:06] DONE: Prepare land use
+[2026-11-17 13:19:06] START: Carrying capacity for relocation sites
+[2026-11-17 13:19:12] DONE: Carrying capacity for relocation sites
+[2026-11-17 13:19:12] START: Flood hazard (HAND)
+[2026-11-17 13:20:05] DONE: Flood hazard (HAND)
+[2026-11-17 13:20:05] START: Load outputs into PostGIS
+[2026-11-17 13:20:13] DONE: Load outputs into PostGIS
+[2026-11-17 13:20:13] ============================================================
+[2026-11-17 13:20:13] PIPELINE COMPLETE — all steps succeeded
+[2026-11-17 13:20:13] Final outputs:
+[2026-11-17 13:20:13]   - data/outputs/red_zones_final.geojson
+[2026-11-17 13:20:13]   - data/outputs/villages_with_risk.geojson
+[2026-11-17 13:20:13]   - data/outputs/relocation_sites.geojson
+[2026-11-17 13:20:13]   - data/outputs/landslide_rf_model.pkl
+[2026-11-17 13:20:13]   - PostGIS tables: red_zones, villages, relocation_sites
+[2026-11-17 13:20:13] ============================================================
+[2026-11-17 13:22:17] ============================================================
+[2026-11-17 13:22:17] PIPELINE RUN STARTED
+[2026-11-17 13:22:17] ============================================================
+[2026-11-17 13:22:17] START: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-17 13:22:23] DONE: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-17 13:22:23] START: Prepare distance-to-stream
+[2026-11-17 13:23:28] DONE: Prepare distance-to-stream
+[2026-11-17 13:23:28] START: Prepare soil/geology
+[2026-11-17 13:23:29] DONE: Prepare soil/geology
+[2026-11-17 13:23:29] START: Prepare rainfall (clip/reproject/sum)
+[2026-11-17 13:23:37] DONE: Prepare rainfall (clip/reproject/sum)
+[2026-11-17 13:23:37] START: Prepare landslide inventory points
+[2026-11-17 13:23:38] DONE: Prepare landslide inventory points
+[2026-11-17 13:23:38] START: Build training dataset
+[2026-11-17 13:23:42] DONE: Build training dataset
+[2026-11-17 13:23:42] START: Train Random Forest model
+[2026-11-17 13:23:55] DONE: Train Random Forest model
+[2026-11-17 13:23:55] START: Generate district-wide red zone map
+[2026-11-17 13:24:52] DONE: Generate district-wide red zone map
+[2026-11-17 13:24:52] START: Prepare population + villages
+[2026-11-17 13:24:56] DONE: Prepare population + villages
+[2026-11-17 13:24:56] START: Village <-> red zone risk join
+[2026-11-17 13:25:09] DONE: Village <-> red zone risk join
+[2026-11-17 13:25:09] START: Prepare land use
+[2026-11-17 13:25:48] DONE: Prepare land use
+[2026-11-17 13:25:48] START: Carrying capacity for relocation sites
+[2026-11-17 13:25:54] DONE: Carrying capacity for relocation sites
+[2026-11-17 13:25:54] START: Flood hazard (HAND)
+[2026-11-17 13:26:55] DONE: Flood hazard (HAND)
+[2026-11-17 13:26:55] START: Load outputs into PostGIS
+[2026-11-17 13:27:00] DONE: Load outputs into PostGIS
+[2026-11-17 13:27:00] ============================================================
+[2026-11-17 13:27:00] PIPELINE COMPLETE — all steps succeeded
+[2026-11-17 13:27:00] Final outputs:
+[2026-11-17 13:27:00]   - data/outputs/red_zones_final.geojson
+[2026-11-17 13:27:00]   - data/outputs/villages_with_risk.geojson
+[2026-11-17 13:27:00]   - data/outputs/relocation_sites.geojson
+[2026-11-17 13:27:00]   - data/outputs/landslide_rf_model.pkl
+[2026-11-17 13:27:00]   - PostGIS tables: red_zones, villages, relocation_sites
+[2026-11-17 13:27:00] ============================================================
+[2026-11-17 13:41:30] ============================================================
+[2026-11-17 13:41:30] PIPELINE RUN STARTED
+[2026-11-17 13:41:30] ============================================================
+[2026-11-17 13:41:30] START: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-17 13:41:36] DONE: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-17 13:41:36] START: Prepare distance-to-stream
+[2026-11-17 13:42:44] DONE: Prepare distance-to-stream
+[2026-11-17 13:42:44] START: Prepare soil/geology
+[2026-11-17 13:42:45] DONE: Prepare soil/geology
+[2026-11-17 13:42:45] START: Prepare rainfall (clip/reproject/sum)
+[2026-11-17 13:42:52] DONE: Prepare rainfall (clip/reproject/sum)
+[2026-11-17 13:42:52] START: Prepare landslide inventory points
+[2026-11-17 13:42:53] DONE: Prepare landslide inventory points
+[2026-11-17 13:42:53] START: Build training dataset
+[2026-11-17 13:42:56] DONE: Build training dataset
+[2026-11-17 13:42:56] START: Train Random Forest model
+[2026-11-17 13:43:07] DONE: Train Random Forest model
+[2026-11-17 13:43:07] START: Generate district-wide red zone map
+[2026-11-17 13:43:55] DONE: Generate district-wide red zone map
+[2026-11-17 13:43:55] START: Prepare population + villages
+[2026-11-17 13:43:58] DONE: Prepare population + villages
+[2026-11-17 13:43:58] START: Village <-> red zone risk join
+[2026-11-17 13:44:14] ============================================================
+[2026-11-17 13:44:14] PIPELINE RUN STARTED
+[2026-11-17 13:44:14] ============================================================
+[2026-11-17 13:44:14] START: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-17 13:44:23] DONE: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-17 13:44:23] START: Prepare distance-to-stream
+[2026-11-17 13:45:26] DONE: Prepare distance-to-stream
+[2026-11-17 13:45:26] START: Prepare soil/geology
+[2026-11-17 13:45:27] DONE: Prepare soil/geology
+[2026-11-17 13:45:27] START: Prepare rainfall (clip/reproject/sum)
+[2026-11-17 13:45:34] DONE: Prepare rainfall (clip/reproject/sum)
+[2026-11-17 13:45:34] START: Prepare landslide inventory points
+[2026-11-17 13:45:35] DONE: Prepare landslide inventory points
+[2026-11-17 13:45:35] START: Build training dataset
+[2026-11-17 13:45:38] DONE: Build training dataset
+[2026-11-17 13:45:38] START: Train Random Forest model
+[2026-11-17 13:45:48] DONE: Train Random Forest model
+[2026-11-17 13:45:48] START: Generate district-wide red zone map
+[2026-11-17 13:46:32] DONE: Generate district-wide red zone map
+[2026-11-17 13:46:32] START: Prepare population + villages
+[2026-11-17 13:46:35] DONE: Prepare population + villages
+[2026-11-17 13:46:35] START: Village <-> red zone risk join
+[2026-11-17 13:46:46] DONE: Village <-> red zone risk join
+[2026-11-17 13:46:46] START: Prepare land use
+[2026-11-17 13:47:13] DONE: Prepare land use
+[2026-11-17 13:47:13] START: Carrying capacity for relocation sites
+[2026-11-17 13:47:20] DONE: Carrying capacity for relocation sites
+[2026-11-17 13:47:20] START: Flood hazard (HAND)
+[2026-11-17 13:48:13] DONE: Flood hazard (HAND)
+[2026-11-17 13:48:13] START: Load outputs into PostGIS
+[2026-11-17 13:48:19] DONE: Load outputs into PostGIS
+[2026-11-17 13:48:19] ============================================================
+[2026-11-17 13:48:19] PIPELINE COMPLETE — all steps succeeded
+[2026-11-17 13:48:19] Final outputs:
+[2026-11-17 13:48:19]   - data/outputs/red_zones_final.geojson
+[2026-11-17 13:48:19]   - data/outputs/villages_with_risk.geojson
+[2026-11-17 13:48:19]   - data/outputs/relocation_sites.geojson
+[2026-11-17 13:48:19]   - data/outputs/landslide_rf_model.pkl
+[2026-11-17 13:48:19]   - PostGIS tables: red_zones, villages, relocation_sites
+[2026-11-17 13:48:19] ============================================================
+[2026-11-17 13:52:57] ============================================================
+[2026-11-17 13:52:57] PIPELINE RUN STARTED
+[2026-11-17 13:52:57] ============================================================
+[2026-11-17 13:52:57] START: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-17 13:53:00] DONE: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-17 13:53:00] START: Prepare distance-to-stream
+[2026-11-17 13:53:55] DONE: Prepare distance-to-stream
+[2026-11-17 13:53:55] START: Prepare soil/geology
+[2026-11-17 13:53:56] DONE: Prepare soil/geology
+[2026-11-17 13:53:56] START: Prepare rainfall (clip/reproject/sum)
+[2026-11-17 13:53:59] DONE: Prepare rainfall (clip/reproject/sum)
+[2026-11-17 13:53:59] START: Prepare landslide inventory points
+[2026-11-17 13:53:59] DONE: Prepare landslide inventory points
+[2026-11-17 13:53:59] START: Build training dataset
+[2026-11-17 13:54:01] DONE: Build training dataset
+[2026-11-17 13:54:01] START: Train Random Forest model
+[2026-11-17 13:54:05] DONE: Train Random Forest model
+[2026-11-17 13:54:05] START: Generate district-wide red zone map
+[2026-11-17 13:54:33] DONE: Generate district-wide red zone map
+[2026-11-17 13:54:33] START: Prepare population + villages
+[2026-11-17 13:54:35] DONE: Prepare population + villages
+[2026-11-17 13:54:35] START: Village <-> red zone risk join
+[2026-11-17 13:54:41] DONE: Village <-> red zone risk join
+[2026-11-17 13:54:41] START: Prepare land use
+[2026-11-17 13:54:58] DONE: Prepare land use
+[2026-11-17 13:54:58] START: Carrying capacity for relocation sites
+[2026-11-17 13:55:01] DONE: Carrying capacity for relocation sites
+[2026-11-17 13:55:01] START: Flood hazard (HAND)
+[2026-11-17 13:55:31] DONE: Flood hazard (HAND)
+[2026-11-17 13:55:31] START: Load outputs into PostGIS
+[2026-11-17 13:55:34] DONE: Load outputs into PostGIS
+[2026-11-17 13:55:34] ============================================================
+[2026-11-17 13:55:34] PIPELINE COMPLETE — all steps succeeded
+[2026-11-17 13:55:34] Final outputs:
+[2026-11-17 13:55:34]   - data/outputs/red_zones_final.geojson
+[2026-11-17 13:55:34]   - data/outputs/villages_with_risk.geojson
+[2026-11-17 13:55:34]   - data/outputs/relocation_sites.geojson
+[2026-11-17 13:55:34]   - data/outputs/landslide_rf_model.pkl
+[2026-11-17 13:55:34]   - PostGIS tables: red_zones, villages, relocation_sites
+[2026-11-17 13:55:34] ============================================================
+[2026-11-17 14:00:36] ============================================================
+[2026-11-17 14:00:36] PIPELINE RUN STARTED
+[2026-11-17 14:00:36] ============================================================
+[2026-11-17 14:00:36] START: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-17 14:00:38] DONE: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-17 14:00:38] START: Prepare distance-to-stream
+[2026-11-17 14:01:12] DONE: Prepare distance-to-stream
+[2026-11-17 14:01:12] START: Prepare soil/geology
+[2026-11-17 14:01:12] DONE: Prepare soil/geology
+[2026-11-17 14:01:12] START: Prepare rainfall (clip/reproject/sum)
+[2026-11-17 14:01:16] DONE: Prepare rainfall (clip/reproject/sum)
+[2026-11-17 14:01:16] START: Prepare landslide inventory points
+[2026-11-17 14:01:17] DONE: Prepare landslide inventory points
+[2026-11-17 14:01:17] START: Build training dataset
+[2026-11-17 14:01:19] DONE: Build training dataset
+[2026-11-17 14:01:19] START: Train Random Forest model
+[2026-11-17 14:01:24] DONE: Train Random Forest model
+[2026-11-17 14:01:24] START: Generate district-wide red zone map
+[2026-11-17 14:01:53] DONE: Generate district-wide red zone map
+[2026-11-17 14:01:53] START: Prepare population + villages
+[2026-11-17 14:01:54] DONE: Prepare population + villages
+[2026-11-17 14:01:54] START: Village <-> red zone risk join
+[2026-11-17 14:02:01] DONE: Village <-> red zone risk join
+[2026-11-17 14:02:01] START: Prepare land use
+[2026-11-17 14:02:17] DONE: Prepare land use
+[2026-11-17 14:02:17] START: Carrying capacity for relocation sites
+[2026-11-17 14:02:20] DONE: Carrying capacity for relocation sites
+[2026-11-17 14:02:20] START: Flood hazard (HAND)
+[2026-11-17 14:02:50] DONE: Flood hazard (HAND)
+[2026-11-17 14:02:50] START: Load outputs into PostGIS
+[2026-11-17 14:02:53] DONE: Load outputs into PostGIS
+[2026-11-17 14:02:53] ============================================================
+[2026-11-17 14:02:53] PIPELINE COMPLETE — all steps succeeded
+[2026-11-17 14:02:53] Final outputs:
+[2026-11-17 14:02:53]   - data/outputs/red_zones_final.geojson
+[2026-11-17 14:02:53]   - data/outputs/villages_with_risk.geojson
+[2026-11-17 14:02:53]   - data/outputs/relocation_sites.geojson
+[2026-11-17 14:02:53]   - data/outputs/landslide_rf_model.pkl
+[2026-11-17 14:02:53]   - PostGIS tables: red_zones, villages, relocation_sites
+[2026-11-17 14:02:53] ============================================================
+[2026-11-17 14:06:00] ============================================================
+[2026-11-17 14:06:00] PIPELINE RUN STARTED
+[2026-11-17 14:06:00] ============================================================
+[2026-11-17 14:06:00] START: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-17 14:06:02] DONE: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-17 14:06:02] START: Prepare distance-to-stream
+[2026-11-17 14:06:37] DONE: Prepare distance-to-stream
+[2026-11-17 14:06:37] START: Prepare soil/geology
+[2026-11-17 14:06:38] DONE: Prepare soil/geology
+[2026-11-17 14:06:38] START: Prepare rainfall (clip/reproject/sum)
+[2026-11-17 14:06:43] DONE: Prepare rainfall (clip/reproject/sum)
+[2026-11-17 14:06:43] START: Prepare landslide inventory points
+[2026-11-17 14:06:44] DONE: Prepare landslide inventory points
+[2026-11-17 14:06:44] START: Build training dataset
+[2026-11-17 14:06:46] DONE: Build training dataset
+[2026-11-17 14:06:46] START: Train Random Forest model
+[2026-11-17 14:06:56] DONE: Train Random Forest model
+[2026-11-17 14:06:56] START: Generate district-wide red zone map
+[2026-11-17 14:07:34] DONE: Generate district-wide red zone map
+[2026-11-17 14:07:34] START: Prepare population + villages
+[2026-11-17 14:07:37] DONE: Prepare population + villages
+[2026-11-17 14:07:37] START: Village <-> red zone risk join
+[2026-11-17 14:07:46] DONE: Village <-> red zone risk join
+[2026-11-17 14:07:46] START: Prepare land use
+[2026-11-17 14:08:12] DONE: Prepare land use
+[2026-11-17 14:08:12] START: Carrying capacity for relocation sites
+[2026-11-17 14:08:17] DONE: Carrying capacity for relocation sites
+[2026-11-17 14:08:17] START: Flood hazard (HAND)
+[2026-11-17 14:09:01] DONE: Flood hazard (HAND)
+[2026-11-17 14:09:01] START: Load outputs into PostGIS
+[2026-11-17 14:09:06] DONE: Load outputs into PostGIS
+[2026-11-17 14:09:06] ============================================================
+[2026-11-17 14:09:06] PIPELINE COMPLETE — all steps succeeded
+[2026-11-17 14:09:06] Final outputs:
+[2026-11-17 14:09:06]   - data/outputs/red_zones_final.geojson
+[2026-11-17 14:09:06]   - data/outputs/villages_with_risk.geojson
+[2026-11-17 14:09:06]   - data/outputs/relocation_sites.geojson
+[2026-11-17 14:09:06]   - data/outputs/landslide_rf_model.pkl
+[2026-11-17 14:09:06]   - PostGIS tables: red_zones, villages, relocation_sites
+[2026-11-17 14:09:06] ============================================================
+[2026-11-18 13:55:50] ============================================================
+[2026-11-18 13:55:50] PIPELINE RUN STARTED
+[2026-11-18 13:55:50] ============================================================
+[2026-11-18 13:55:50] START: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-18 13:55:52] DONE: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-18 13:55:52] START: Prepare distance-to-stream
+[2026-11-18 13:56:21] DONE: Prepare distance-to-stream
+[2026-11-18 13:56:21] START: Prepare soil/geology
+[2026-11-18 13:56:22] DONE: Prepare soil/geology
+[2026-11-18 13:56:22] START: Prepare rainfall (clip/reproject/sum)
+[2026-11-18 13:56:25] DONE: Prepare rainfall (clip/reproject/sum)
+[2026-11-18 13:56:25] START: Prepare landslide inventory points
+[2026-11-18 13:56:26] DONE: Prepare landslide inventory points
+[2026-11-18 13:56:26] START: Build training dataset
+[2026-11-18 13:56:27] DONE: Build training dataset
+[2026-11-18 13:56:27] START: Train Random Forest model
+[2026-11-18 13:56:31] DONE: Train Random Forest model
+[2026-11-18 13:56:31] START: Generate district-wide red zone map
+[2026-11-18 13:56:52] DONE: Generate district-wide red zone map
+[2026-11-18 13:56:52] START: Prepare population + villages
+[2026-11-18 13:56:53] DONE: Prepare population + villages
+[2026-11-18 13:56:53] START: Village <-> red zone risk join
+[2026-11-18 13:56:58] DONE: Village <-> red zone risk join
+[2026-11-18 13:56:58] START: Prepare land use
+[2026-11-18 13:57:11] DONE: Prepare land use
+[2026-11-18 13:57:11] START: Carrying capacity for relocation sites
+[2026-11-18 13:57:14] DONE: Carrying capacity for relocation sites
+[2026-11-18 13:57:14] START: Flood hazard (HAND)
+[2026-11-18 13:57:37] DONE: Flood hazard (HAND)
+[2026-11-18 13:57:37] START: Load outputs into PostGIS
+[2026-11-18 13:57:40] DONE: Load outputs into PostGIS
+[2026-11-18 13:57:40] ============================================================
+[2026-11-18 13:57:40] PIPELINE COMPLETE — all steps succeeded
+[2026-11-18 13:57:40] Final outputs:
+[2026-11-18 13:57:40]   - data/outputs/red_zones_final.geojson
+[2026-11-18 13:57:40]   - data/outputs/villages_with_risk.geojson
+[2026-11-18 13:57:40]   - data/outputs/relocation_sites.geojson
+[2026-11-18 13:57:40]   - data/outputs/landslide_rf_model.pkl
+[2026-11-18 13:57:40]   - PostGIS tables: red_zones, villages, relocation_sites
+[2026-11-18 13:57:40] ============================================================
+[2026-11-18 14:02:13] ============================================================
+[2026-11-18 14:02:13] PIPELINE RUN STARTED
+[2026-11-18 14:02:13] ============================================================
+[2026-11-18 14:02:13] START: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-18 14:02:15] DONE: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-18 14:02:15] START: Prepare distance-to-stream
+[2026-11-18 14:02:44] DONE: Prepare distance-to-stream
+[2026-11-18 14:02:44] START: Prepare soil/geology
+[2026-11-18 14:02:44] DONE: Prepare soil/geology
+[2026-11-18 14:02:44] START: Prepare rainfall (clip/reproject/sum)
+[2026-11-18 14:02:47] DONE: Prepare rainfall (clip/reproject/sum)
+[2026-11-18 14:02:47] START: Prepare landslide inventory points
+[2026-11-18 14:02:48] DONE: Prepare landslide inventory points
+[2026-11-18 14:02:48] START: Build training dataset
+[2026-11-18 14:02:49] DONE: Build training dataset
+[2026-11-18 14:02:49] START: Train Random Forest model
+[2026-11-18 14:02:53] DONE: Train Random Forest model
+[2026-11-18 14:02:53] START: Generate district-wide red zone map
+[2026-11-18 14:03:14] DONE: Generate district-wide red zone map
+[2026-11-18 14:03:14] START: Prepare population + villages
+[2026-11-18 14:03:15] DONE: Prepare population + villages
+[2026-11-18 14:03:15] START: Village <-> red zone risk join
+[2026-11-18 14:03:20] DONE: Village <-> red zone risk join
+[2026-11-18 14:03:20] START: Prepare land use
+[2026-11-18 14:03:32] DONE: Prepare land use
+[2026-11-18 14:03:32] START: Carrying capacity for relocation sites
+[2026-11-18 14:03:35] DONE: Carrying capacity for relocation sites
+[2026-11-18 14:03:35] START: Flood hazard (HAND)
+[2026-11-18 14:03:58] DONE: Flood hazard (HAND)
+[2026-11-18 14:03:58] START: Load outputs into PostGIS
+[2026-11-18 14:04:01] DONE: Load outputs into PostGIS
+[2026-11-18 14:04:01] ============================================================
+[2026-11-18 14:04:01] PIPELINE COMPLETE — all steps succeeded
+[2026-11-18 14:04:01] Final outputs:
+[2026-11-18 14:04:01]   - data/outputs/red_zones_final.geojson
+[2026-11-18 14:04:01]   - data/outputs/villages_with_risk.geojson
+[2026-11-18 14:04:01]   - data/outputs/relocation_sites.geojson
+[2026-11-18 14:04:01]   - data/outputs/landslide_rf_model.pkl
+[2026-11-18 14:04:01]   - PostGIS tables: red_zones, villages, relocation_sites
+[2026-11-18 14:04:01] ============================================================
+[2026-11-18 15:12:32] ============================================================
+[2026-11-18 15:12:32] PIPELINE RUN STARTED
+[2026-11-18 15:12:32] ============================================================
+[2026-11-18 15:12:32] START: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-18 15:12:37] DONE: Prepare DEM (merge/clip/slope/aspect)
+[2026-11-18 15:12:37] START: Prepare distance-to-stream
+[2026-11-18 15:13:35] DONE: Prepare distance-to-stream
+[2026-11-18 15:13:35] START: Prepare soil/geology
+[2026-11-18 15:13:36] DONE: Prepare soil/geology
+[2026-11-18 15:13:36] START: Prepare rainfall (clip/reproject/sum)
+[2026-11-18 15:13:42] DONE: Prepare rainfall (clip/reproject/sum)
+[2026-11-18 15:13:42] START: Prepare landslide inventory points
+[2026-11-18 15:13:43] DONE: Prepare landslide inventory points
+[2026-11-18 15:13:43] START: Build training dataset
+[2026-11-18 15:13:45] DONE: Build training dataset
+[2026-11-18 15:13:45] START: Train Random Forest model
+[2026-11-18 15:13:55] DONE: Train Random Forest model
+[2026-11-18 15:13:55] START: Generate district-wide red zone map
+[2026-11-18 15:14:36] DONE: Generate district-wide red zone map
+[2026-11-18 15:14:36] START: Prepare population + villages
+[2026-11-18 15:14:39] DONE: Prepare population + villages
+[2026-11-18 15:14:39] START: Village <-> red zone risk join
+[2026-11-18 15:14:48] DONE: Village <-> red zone risk join
+[2026-11-18 15:14:48] START: Prepare land use
+[2026-11-18 15:15:23] DONE: Prepare land use
+[2026-11-18 15:15:23] START: Carrying capacity for relocation sites
+[2026-11-18 15:15:29] DONE: Carrying capacity for relocation sites
+[2026-11-18 15:15:29] START: Flood hazard (HAND)
+[2026-11-18 15:16:23] DONE: Flood hazard (HAND)
+[2026-11-18 15:16:23] START: Load outputs into PostGIS
+[2026-11-18 15:16:33] DONE: Load outputs into PostGIS
+[2026-11-18 15:16:33] ============================================================
+[2026-11-18 15:16:33] PIPELINE COMPLETE — all steps succeeded
+[2026-11-18 15:16:33] Final outputs:
+[2026-11-18 15:16:33]   - data/outputs/red_zones_final.geojson
+[2026-11-18 15:16:33]   - data/outputs/villages_with_risk.geojson
+[2026-11-18 15:16:33]   - data/outputs/relocation_sites.geojson
+[2026-11-18 15:16:33]   - data/outputs/landslide_rf_model.pkl
+[2026-11-18 15:16:33]   - PostGIS tables: red_zones, villages, relocation_sites
+[2026-11-18 15:16:33] ============================================================
