@@ -1,5 +1,5 @@
 """
-MASTER PIPELINE ORCHESTRATOR
+MASTER PIPELINE ORCHESTRATOR which is the primary unit in this project that runs the whole pipeline.
 
 Drop new raw data into data/raw/ subfolders, then run this single script.
 It executes every processing step in order and produces:
